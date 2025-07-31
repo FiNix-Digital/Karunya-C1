@@ -157,13 +157,14 @@
                   <small>Per Year</small>
                 </div>
                 <div class="course-actions">
-                  <button
+                  <a
                     class="btn btn-primary"
-                   href="https://karunyaacademy.conductexam.com"
+                    href="https://karunyaacademy.conductexam.com"
+                    target="_blank"
                     data-course="IIT-JEE"
                   >
                     Apply Now
-                  </button>
+                  </a>
                   <a href="./assets/KI JEE syllabuspdf.pdf" target="_blank" class="btn btn-outline-primary">
                     View Syllabus
                   </a>
@@ -225,13 +226,14 @@
                   <small>Per Year</small>
                 </div>
                 <div class="course-actions">
-                  <button
+                  <a
                     class="btn btn-primary"
                     href="https://karunyaacademy.conductexam.com"
+                    target="_blank"
                     data-course="NEET"
                   >
                     Apply Now
-                  </button>
+                  </a>
                   <a href="/assets/Inter Physics Syllabus.pdf" target="_blank" class="btn btn-outline-primary">
                     View Syllabus
                   </a>
@@ -291,13 +293,14 @@
                   <small>Per Year</small>
                 </div>
                 <div class="course-actions">
-                  <button
+                  <a
                     class="btn btn-primary"
                     href="https://karunyaacademy.conductexam.com"
                     data-course="EAMCET"
+                    target="_blank"
                   >
                     Apply Now
-                  </button>
+                  </a>
                   <a href="/assets/Inter Physics Syllabus.pdf" class="btn btn-outline-primary">
                     View Syllabus
                   </a>
@@ -599,195 +602,7 @@
       <i class="fas fa-phone-alt"></i>
     </a>
 
-    <div class="modal fade" id="courseModal" tabindex="-1">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Apply for Course</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <form id="courseApplicationForm">
-              <div class="row">
-                <div class="col-md-6 mb-3">
-                  <label for="courseName" class="form-label">Course</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="courseName"
-                    readonly
-                  />
-                </div>
-                <div class="col-md-6 mb-3">
-                  <label for="studentNameCourse" class="form-label"
-                    >Student Name</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="studentNameCourse"
-                    required
-                  />
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6 mb-3">
-                  <label for="studentEmailCourse" class="form-label"
-                    >Email</label
-                  >
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="studentEmailCourse"
-                    required
-                  />
-                </div>
-                <div class="col-md-6 mb-3">
-                  <label for="studentPhoneCourse" class="form-label"
-                    >Phone Number</label
-                  >
-                  <input
-                    type="tel"
-                    class="form-control"
-                    id="studentPhoneCourse"
-                    required
-                  />
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6 mb-3">
-                  <label for="currentClass" class="form-label"
-                    >Current Class/Qualification</label
-                  >
-                  <select class="form-select" id="currentClass" required>
-                    <option value="">Select Class</option>
-                    <option value="8th">8th Class</option>
-                    <option value="9th">9th Class</option>
-                    <option value="10th">10th Class</option>
-                    <option value="11th">11th Class</option>
-                    <option value="12th">12th Class</option>
-                    <option value="12th-pass">12th Passed</option>
-                    <option value="dropper">Dropper</option>
-                  </select>
-                </div>
-                <div class="col-md-6 mb-3">
-                  <label for="preferredBatch" class="form-label"
-                    >Preferred Batch Time</label
-                  >
-                  <select class="form-select" id="preferredBatch" required>
-                    <option value="">Select Batch</option>
-                    <option value="morning">
-                      Morning (6:00 AM - 12:00 PM)
-                    </option>
-                    <option value="afternoon">
-                      Afternoon (1:00 PM - 6:00 PM)
-                    </option>
-                    <option value="evening">
-                      Evening (6:00 PM - 10:00 PM)
-                    </option>
-                    <option value="weekend">Weekend Only</option>
-                  </select>
-                </div>
-              </div>
-              <div class="mb-3">
-                <label for="previousMarks" class="form-label"
-                  >Previous Academic Performance (%)</label
-                >
-                <input
-                  type="number"
-                  class="form-control"
-                  id="previousMarks"
-                  min="0"
-                  max="100"
-                  placeholder="Enter percentage"
-                />
-              </div>
-              <div class="mb-3">
-                <label for="additionalInfo" class="form-label"
-                  >Additional Information</label
-                >
-                <textarea
-                  class="form-control"
-                  id="additionalInfo"
-                  rows="3"
-                  placeholder="Any specific requirements or questions..."
-                ></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary w-100">
-                Submit Application
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="applyModal" tabindex="-1">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Apply Now</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <form id="applyForm">
-              <div class="mb-3">
-                <label for="studentName" class="form-label">Student Name</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="studentName"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <label for="studentEmail" class="form-label">Email</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="studentEmail"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <label for="studentPhone" class="form-label"
-                  >Phone Number</label
-                >
-                <input
-                  type="tel"
-                  class="form-control"
-                  id="studentPhone"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <label for="courseInterest" class="form-label"
-                  >Course of Interest</label
-                >
-                <select class="form-select" id="courseInterest" required>
-                  <option value="">Select Course</option>
-                  <option value="iit-jee">IIT-JEE</option>
-                  <option value="neet">NEET</option>
-                  <option value="foundation">Foundation</option>
-                  <option value="eamcet">EAMCET</option>
-                </select>
-              </div>
-              <button type="submit" class="btn btn-primary w-100">
-                Submit Application
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
+   
     <script>
       function playVideo(id) {
         const videoHtml = videos[id];
