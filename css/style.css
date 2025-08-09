@@ -395,6 +395,12 @@ p {
   margin-left: var(--spacing-xs);
 }
 
+.d-flex {
+  min-height: 100vh;
+  align-items: center;
+}
+
+
 /* Topper Cards */
 .topper-card {
   background: var(--white);
